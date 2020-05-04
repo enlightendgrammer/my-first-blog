@@ -1,0 +1,7 @@
+*.pyc
+*~
+/.vscode
+__pycache__
+LeonardosENV
+/static
+.DS_Store
