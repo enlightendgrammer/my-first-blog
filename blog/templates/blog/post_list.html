@@ -1,3 +1,4 @@
+
 <html>
 <head>
     <title>Leonardos Profile</title>
@@ -6,11 +7,13 @@
     <div>
         <h1><a href="/"> Leonardos Blog Posts</a></h1>
     </div>
+    {% for post in posts %}
+       <div>
+           <p>Date published: {{post.published_date}}</p>
+           <h2><a href=''>{{posttitle}}</a></h2>
+           <p>{{post.text|linebreaksbr}}</p>
+       </div>
+    {% endfor %}
 
-    <div>
-        <em>date published</em>
-        <h2><a href ='/'>My first post</a></h2>
-        <p>text for blog</p>
-    </div>
 </body>
 </html>
